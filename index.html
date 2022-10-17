@@ -1,12 +1,260 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabMov</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <script src="https://kit.fontawesome.com/cf64a89bf1.js" crossorigin="anonymous"></script>
+        
+        <title>LabMov</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container container">
+                <div class="logo"></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">inicio</a></li>
+                        <li><a href="./quemsomos.html">quem somos</a></li>
+                        <li><a href="#">areas</a></li>
+                        <li><a href="#">projetos</a></li>
+                        <li><a href="#">noticias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="banner container">
+            <div class="slides">
+                <div class="darkness"></div>
+                <input type="radio" class="slide-radios" name="radio-btnc" id="radio1">
+                <input type="radio" class="slide-radios" name="radio-btnc" id="radio2">
+                <input type="radio" class="slide-radios" name="radio-btnc" id="radio3">
+
+                <div class="slide">
+                    <img src="./assets/images/banner_principal.jpeg" alt="banner">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/banner_2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/banner_3.webp">
+                </div>
+            </div>
+            <div class="slide-navigation">
+                <label class="slide-balls" for="radio1"></label>
+                <label class="slide-balls" for="radio2"></label>
+                <label class="slide-balls" for="radio3"></label>
+            </div>
+        </section>
+        <div class="section-container">
+            <section class="section-white">
+                <div class="container section">
+                    <div class="section-title"><h2>labmov</h2></div>
+                    <div class="section-sobre">
+                        <div class="section-sobre--resume"><p>Atualmente, são desenvolvidas neste laboratório pesquisas voltadas para a área de simulações 
+                            computacionais pelo método de elementos finitos, big data, visualização científica, robótica e impressão 3d. O laboratório 
+                            atua nas áreas de pesquisa, ensino e extensão, tendo parcerias com universidades, escolas e empresas da região. Na área de 
+                            extensão, são realizados cursos de capacitação para professores de escolas públicas visando inseri-los na cultura maker.</p></div>
+                        <div class="section-sobre--video">
+                            <div class="section-sobre--thumb">
+                                <img src="./assets/images/sobre-nos.jpg" alt="thumbnail do video">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-blue">
+                <div class="container">
+                    <div class="section-title"><h2>areas de pesquisas</h2></div>
+                    <div class="section-areas-pesquisas">
+                        <div class="area">
+                            <img src="./assets/images/simulacao_main.png" alt="Simulação 3D">
+                            <div class="area-text">
+                                <div class="area-text--title"><h4>simulação</h4></div>
+                                <div class="area-text--resume"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa ratione minus maiores nesciunt, velit temporibus.</p></div>
+                            </div>
+                            <div class="button">saiba mais</div>
+                        </div>
+                        <div class="area">
+                            <img src="./assets/images/impressao_main.png" alt="Simulação 3D">
+                            <div class="area-text">
+                                <div class="area-text--title"><h4>impressão 3d</h4></div>
+                                <div class="area-text--resume"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa ratione minus maiores nesciunt, velit temporibus.</p></div>
+                            </div>
+                            <div class="button">saiba mais</div>
+                        </div>
+                        <div class="area">
+                            <img src="./assets/images/robotica_main.png" alt="Simulação 3D">
+                            <div class="area-text">
+                                <div class="area-text--title"><h4>robótica</h4></div>
+                                <div class="area-text--resume"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa ratione minus maiores nesciunt, velit temporibus.</p></div>
+                            </div>
+                            <div class="button">saiba mais</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-white">
+                <div class="container">
+                    <div class="section-title"><h2>galeria</h2></div>
+                    <div class="section-projetos">
+                        <div class="section-projetos--filter">
+                            <ul>
+                                <li class="active" id="filter-todos">todos</li>
+                                <li  class="" id="filter-simulacao">simulação</li>
+                                <li  class="" id="filter-impressao">impressão 3d</li>
+                                <li  class="" id="filter-robotica">robótica</li>
+                            </ul>
+                        </div>
+                        <div class="section-projetos-images">
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                               
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/projetos/robo.png">
+                                 </div>
+                               
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                                
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                               
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                               
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                                
+                            </div>
+                            <div class="section-projeto-image">
+                                <div class="section-projeto-image-area">
+                                    <div class="section-projeto-resume">
+                                        <h5>Titulo</h5>
+                                        <p>Resumo</p>
+                                    </div>
+                                    <img src="./assets/images/robotica_projeto.png">
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <div class="grid-midias">
+                <section class="section-white">
+                    <div class="container">
+                        <div class="section-title"><h2>nossos projetos</h2></div>
+                        <div class="section-nossos-projetos">
+                            <div class="projeto">
+                                <div class="projeto--info">
+                                    <h5>robozinho</h5>
+                                    <p>Breve descrição</p>
+                                </div>
+                                <img src="./assets/images/robotica_projeto.png">
+                            </div>
+                            <div class="projeto">
+                                <div class="projeto--info">
+                                    <h5>robozinho</h5>
+                                    <p>Breve descrição</p>
+                                </div>
+                                <img src="./assets/images/robotica_projeto.png">
+                            </div>
+                            <div class="projeto">
+                                <div class="projeto--info">
+                                    <h5>robozinho</h5>
+                                    <p>Breve descrição</p>
+                                </div>
+                                <img src="./assets/images/robotica_projeto.png">
+                            </div>
+                            <div class="projeto"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-white">
+                    <div class="container">
+                        <div class="section-title"><h2>instagram</h2></div>
+                        <div class="section-instagram">
+                            <div class="section-instagram--image">
+                                <img src="./assets/images/banner_3.webp">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="section-blue">
+            <div class="container">
+                <div class="footer-contato">
+                    <div class="uerj-logo"><img src="./assets/images/uerjlogo-branco.png" alt="Logo da uerj"></div>
+                    <div class="endereco">
+                        <h6>Endereço</h6>
+                        <p>Av. Manoel Caldeira Alvarenga, 1203</p>
+                        <p>- Sala --</p>
+                        <p>- Campo Grande - Rio De Janeiro - RJ</p>
+                        <p>- CEP 23070-200</p>
+                    </div>
+                    <div class="contato">
+                        <h6>Contato</h6>
+                        <p>-Telefone: +55 21 984623720</p>
+                        <p>-Email: giselecaboclo@yahoo.com.br</p>
+                    </div>
+                    <div class="redes-sociais">
+                        <h6>Redes Sociais</h6>
+                        <div class="instagram"><i class="fab fa-instagram fa-solid fa-play "></i></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/scripts/script.js"></script>  
+    </html>
