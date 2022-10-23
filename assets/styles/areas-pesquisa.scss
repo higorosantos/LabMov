@@ -1,0 +1,126 @@
+@import "./style.scss";
+
+.area-pesquisa {
+    max-width: 83%;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 2.2rem;
+}
+
+.area-pesquisa .subareas {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.subareas-menu {
+    margin: 0rem 0.8rem 3rem 0.8rem;
+}
+
+.subareas-menu ul{
+    
+    display: flex;
+    list-style: none;
+}
+
+.btn-subareas{
+
+    text-transform: uppercase;
+    font-size: 8pt;
+    margin-right: 0.4rem;
+    cursor: pointer;
+    color: #8B8787; 
+    border-radius: 0.2rem;
+    padding: 0.1rem 2rem;
+    
+    
+    &:hover{
+        background-color: $secondary-color;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+.btn-actived {
+    background-color: $secondary-color;
+    font-weight: 400;
+    color: #fff;
+}
+
+.subarea {
+    margin: 4rem 0 2rem 0;
+    display: flex;
+}
+
+.subarea--resume {
+
+    flex: 1;
+    
+}
+
+.subarea--image {
+    width: 450px;
+    height: 280px;
+   
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        object-fit: cover;
+        object-position: bottom;
+        box-shadow: 0 10px 10px #ccc;
+        filter: brightness(70%);
+    }
+}
+
+.line {
+    width: 100%;
+    border-bottom: 2px solid rgba(45, 52, 83, 0.5) ; ;
+}
+
+.projetos {
+    margin: 3rem 0;
+}
+
+.projetos-slides {
+    display: flex;
+    width: 100%;
+    padding: 2rem 2rem;
+    background-color: #8B8787;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.projeto {
+    position: relative;
+    width: 280px;
+    height: 320px;
+    border-radius: 1rem; 
+    margin-right: 1.5rem;
+    
+    flex: none;   
+
+    img {
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: inherit;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: inherit;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 50px rgba(0,0,0, 0.8);
+    }
+}
+
+
