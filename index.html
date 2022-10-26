@@ -18,31 +18,37 @@
                     <ul>
                         <li><a href="#">inicio</a></li>
                         <li><a href="#">quem somos</a></li>
-                        <li><a href="#">areas</a></li>
+                        <li><a id="open-submenu" href="#">pesquisas</a>
+                            <div class="projetos-submenu">
+                                <ul>
+                                    <li><a href="#">impressão 3d</a></li>
+                                    <li><a href="#">simulação</a></li>
+                                    <li><a href="#">robotica</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">noticias</a></li>
                     </ul>
                 </nav>
             </div>
+            
         </header>
-        <section class="banner container">
+        <section class="banner">
             <div class="slides">
-                <div class="darkness"></div>
-                <input type="radio" class="slide-radios" name="radio-btnc" id="radio1">
-                <input type="radio" class="slide-radios" name="radio-btnc" id="radio2">
-                <input type="radio" class="slide-radios" name="radio-btnc" id="radio3">
-
-                <div class="slide">
-                    <img src="./assets/images/banner_principal.jpeg" alt="banner">
+                <div class="slide dark-image" style="background-image: url('./assets/images/banner_principal.jpeg');">
+                   <div class="container">
+                        <h2>QUALQUER COISA</h2>
+                   </div>
                 </div>
-                <div class="slide">
-                    <img src="./assets/images/banner_2.jpg">
+                <div class="slide dark-image" style="background-image: url('./assets/images/banner_2.jpg');">
+                    
                 </div>
-                <div class="slide">
-                    <img src="./assets/images/banner_3.webp">
+                <div class="slide dark-image" style="background-image: url('./assets/images/banner_3.webp');">
+                    
                 </div>
             </div>
             <div class="slide-navigation">
-                <label class="slide-balls" for="radio1"></label>
+                <label class="slide-balls actived" for="radio1"></label>
                 <label class="slide-balls" for="radio2"></label>
                 <label class="slide-balls" for="radio3"></label>
             </div>
@@ -67,7 +73,7 @@
             </section>
             <section class="section-blue section-default">
                 <div class="container">
-                    <div class="section-title"><h2>areas de pesquisas</h2></div>
+                    <div class="section-title"><h2>pesquisas</h2></div>
                     <div class="section-areas-pesquisas section-body">
                         <div class="area">
                             <img src="./assets/images/simulacao_main.png" alt="Simulação 3D">
@@ -216,4 +222,5 @@
         </footer>
     </body>
     <script src="./assets/scripts/script.js"></script>  
+    <script src="./assets/scripts/carroulsel.js"></script>  
     </html>
