@@ -1,7 +1,11 @@
 @import "./style.scss";
 
+.banner-pesquisas {
+    height: 350px;
+    
+}    
 .area-pesquisa {
-    max-width: 83%;
+    //max-width: 83%;
     font-size: 1rem;
     font-weight: 200;
     line-height: 2.2rem;
@@ -55,6 +59,10 @@
 .subarea--resume {
 
     flex: 1;
+
+    .btn-subareas {
+        width: 50px;
+    }
     
 }
 
@@ -73,54 +81,172 @@
     }
 }
 
-.line {
-    width: 100%;
-    border-bottom: 2px solid rgba(45, 52, 83, 0.5) ; ;
-}
-
 .projetos {
     margin: 3rem 0;
 }
-
-.projetos-slides {
+.section-projetos {
+    margin: 5rem 2rem 2rem 0rem;
     display: flex;
-    width: 100%;
-    padding: 2rem 2rem;
-    background-color: #8B8787;
-    align-items: center;
-    overflow-x: hidden;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+
 }
 
-.projeto {
-    position: relative;
-    width: 280px;
-    height: 320px;
-    border-radius: 1rem; 
-    margin-right: 1.5rem;
+.projetos-nav {
+    padding: 0 2rem;
+}
+.projetos-nav ul{
+   list-style: none;
+}
+
+.btn-projetos{
     
-    flex: none;   
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.2rem 5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+    color: rgb(131, 129, 129);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+}
+
+.btn-projetos:hover {
+    color: #fff;
+    background-color: #2D3453;
+}
+
+.btn-projetos.actived {
+    color: #fff;
+    background-color: #2D3453;
+}
+.tittle-projeto {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #2364C7;
+    margin-bottom: 2rem;
+}
+
+.projeto-resume {
+    display: flex;
+
+    p {
+        flex: 1;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.9rem;
+        text-align: justify;
+        margin-right: 4rem;
+    }
+}
+
+.content {
+    .section-sobre {
+        .section-sobre--thumb{
+            height: 250px;
+            width: 450px;
+            border-radius: 4px;
+            margin-top: 2rem;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom;
+                border-radius: inherit;
+            }
+        }
+    }
+}
+.projeto-main--image {
+    width: 450px;
+    height: 300px;
+    border-radius: 4px;
 
     img {
-        
-        display: block;
         width: 100%;
         height: 100%;
+        border-radius: inherit;
         object-fit: cover;
-        object-position: center;
-        border-radius: inherit;
-
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        border-radius: inherit;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 0 0 50px rgba(0,0,0, 0.8);
+        object-position: bottom;
+        box-shadow: 0 10px 10px #ccc;
+        filter: brightness(70%);
     }
 }
 
+  .wrapper {
+    margin-top: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .slider {
+    height: 17rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .item .title {
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  .item img {
+    height: 14rem;
+  }
+  
+  .next,
+  .prev {
+    font-family: monospace;
+    font-size: 5rem;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgb(100,100,100, 0.5);
+  }
+  .prev{
+    transform: rotate(-180deg);
+  }
+  .next:hover{
+    text-shadow: 2px 2px 2px rgb(200,200,200);
+  }
+  .prev:hover{
+    text-shadow: 2px -2px 2px rgb(200,200,200);
+  }
+  
+  .item {
+    flex: 1 0 25%;
+    min-height: 200px;
+    text-align: center;
+    height: auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .item {
+      flex: 1 0 33%;
+    }
+  }
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 0 50%;
+    }
+  }
+  @media (max-width: 576px) {
+    .item {
+      flex: 1 0 100%;
+    }
+  }
+  
 
+@media (max-width: 1250px) {
+    .section-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+}

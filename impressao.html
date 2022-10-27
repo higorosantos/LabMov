@@ -12,18 +12,29 @@
 <body>
     <header>
         <div class="header-container container">
-            <div class="logo"></div>
+            <div class="logo"><img  src="./assets/images/logo.png" alt="logo"></div>
+            <div class="menu-toggle"></div>
             <nav class="menu">
                 <ul>
                     <li><a href="./index.html">inicio</a></li>
-                    <li><a href="#">quem somos</a></li>
-                    <li><a href="#">areas</a></li>
-                    <li><a href="#">projetos</a></li>
+                    <li><a href="./quemsomos.html">quem somos</a></li>
+                    <li><a id="open-submenu" href="#">pesquisas</a>
+                        <div class="projetos-submenu">
+                            <ul>
+                                <li><a href="#">impressão 3d</a></li>
+                                <li><a href="./impressao.html">simulação</a></li>
+                                <li><a href="./impressao.html">robotica</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="#">noticias</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <section class="banner-pesquisas" style="background-color: #ccc;">
+        <div class="content"></div>
+    </section>
     <section class="section-white section-default">
         <div class="container">
             <div class="section-title"><h1>IMPRESSÃO 3D</h1></div>
@@ -40,64 +51,36 @@
                             <li class="btn-subareas">tipo 4</li>
                         </ul>
                     </nav>
-                    <!-- <div class="section-title"><h3>tipo 1</h3></div>
-                    <div class="subarea">
+                    <div class="section-title" style="display: none;"><h3>tipo 1</h3></div>
+                    <div class="subarea" style="display: none;">
                         <div class="subarea--resume">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores rerum, sapiente placeat molestias ea soluta ullam! Officia, facilis magni. Sint quidem porro consequatur itaque necessitatibus voluptatibus, dorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores rerum, sapiente placeat molestias ea soluta ullam! Officia, facilis magni. Sint quidem porro consequatur itaque necessitatibus voluptatibus.</p>
+                            <div class="btn-subareas">ver projetos</div>
                         </div>
                         <div class="subarea--image"><img src="./assets/images/projetos/impressao1.jpg"></div>
-                    </div>  -->
+                    </div>
+                    
                     <!-- <span class="line"></span> -->
                     <div class="section-title"><h2>projetos</h2></div>
-                    <div class="projetos">
-                        <div class="projetos-slides">
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao8.jpg" alt="">
-                            </div>
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao3.jpg" alt="">
-                            </div>
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao2.jpg" alt="">
-                            </div>
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao6.jpg" alt="">
-                            </div>
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao7.jpg" alt="">
-                            </div>
-                            <div class="projeto">
-                                <img src="./assets/images/projetos/impressao5.jpg" alt="">
-                            </div>
+                    <div class="section-projetos">
+                        <nav class="projetos-nav">
+                            <ul>
+                                <li class="btn-projetos actived">projeto</li>
+                                <li class="btn-projetos">projeto</li>
+                                <li class="btn-projetos">projeto</li>
+                            </ul>
+                        </nav>
+                        <div class="content">
+                            <h2 class="tittle-projeto">projeto</h2>
+                            <div class="section-sobre">
+                                <p class="section-sobre--resume">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora blanditiis ad quis, illum dolorem officia officiis expedita nulla, minima vel sit labore rem, molestiae laudantium praesentium error iusto aorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora blanditiis ad quis, illum dolorem officia officiis expedita nulla, minima vel sit labore rem, zoorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora blanditiis ad quis, illum dolorem officia officiis expedita nulla, minima vel sit labore rem, molestiae laudantium praesentium error iusto?  </p>
+                                <div class="section-sobre--thumb dark-image"><img src="./assets/images/projetos/impressao1.jpg" alt=""></div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="section-blue">
-        <div class="container">
-            <div class="footer-contato">
-                <div class="uerj-logo"><img src="./assets/images/uerjlogo-branco.png" alt="Logo da uerj"></div>
-                <div class="endereco">
-                    <h6>Endereço</h6>
-                    <p>Av. Manoel Caldeira Alvarenga, 1203</p>
-                    <p>- Sala --</p>
-                    <p>- Campo Grande - Rio De Janeiro - RJ</p>
-                    <p>- CEP 23070-200</p>
-                </div>
-                <div class="contato">
-                    <h6>Contato</h6>
-                    <p>-Telefone: +55 21 984623720</p>
-                    <p>-Email: giselecaboclo@yahoo.com.br</p>
-                </div>
-                <div class="redes-sociais">
-                    <h6>Redes Sociais</h6>
-                    <div class="instagram"><i class="fab fa-instagram fa-solid fa-play "></i></div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 <script src="./assets/scripts/script.js"></script>  
 </html>
