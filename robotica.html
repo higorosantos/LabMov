@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/areas-pesquisa.css">
+    <script src="https://kit.fontawesome.com/cf64a89bf1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>LabMov - RÓBOTICA </title>
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="logo"><img  src="./assets/images/logo.png" alt="logo"></div>
+            <div class="menu-toggle"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">inicio</a></li>
+                    <li><a href="./quemsomos.html">quem somos</a></li>
+                    <li><a id="open-submenu" href="#">pesquisas</a>
+                        <div class="projetos-submenu">
+                            <ul>
+                                <li><a href="./impressao.html">impressão 3d</a></li>
+                                <li><a href="./impressao.html">simulação</a></li>
+                                <li><a href="#">robotica</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">noticias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner-pesquisas" style="background-color: #ccc;">
+        <div class="content"></div>
+    </section>
+    <section class="section-white section-default">
+        <div class="container">
+            <div class="section-title"><h1>ROBÓTICA</h1></div>
+            <div class="area-pesquisa section-body">
+                <div class="text"><p>Atualmente, desenvolvemos trabalhos na área de educação e pesquisa científica. As pesquisas científicas são voltadas para o desenvolvimento de protótipos para a área da saúde.
+                Ainda na parte de robótica temos a oferta de cursos livres e trabalhos em escolas de educação básica.</p>
+                </div>
+                <div class="subareas">
+                    <nav class="subareas-menu">
+                        <ul>
+                            <li class="btn-subareas btn-actived">Pesquisas</li>
+                            <li class="btn-subareas">Escolas</li>
+                            <li class="btn-subareas">Feiras Científicas</li>
+                        </ul>
+                    </nav>    
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="projeto">
+                        <div class="projeto-image" id="teste1" style="background-image: url('./assets/images/projetos/robotica5.jpg');">
+                            <div class="slide-buttons">
+                                <div class="slide-button actived" onclick="changeImage(this,'teste1')" style="background-image: url('./assets/images/projetos/robotica5.jpg');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste1')" style="background-image: url('./assets/images/projetos/robotica7.jpg');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste1')" style="background-image: url('./assets/images/projetos/robotica8.jpg');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste1')" style="background-image: url('./assets/images/projetos/robotica9.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>Protótipo desenvolvido para parte de reabilitação motora.
+                            </p>
+                        </div>
+                    </div>                
+                  </div>
+                  <div class="carousel-item">
+                    <div class="projeto">
+                        <div class="projeto-image" id="teste2" style="background-image: url('./assets/images/projetos/robotica1.jpg');">
+                            <div class="slide-buttons">
+                                <div class="slide-button actived" onclick="changeImage(this,'teste2')" style="background-image: url('./assets/images/projetos/robotica1.jpg');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste2')" style="background-image: url('./assets/images/projetos/robotica2.jpg');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste2')" style="background-image: url('./assets/images/projetos/robotica3.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>Protótipo desenvolvido para reabilitação pulmonar.
+                            </p>
+                        </div>
+                    </div>                
+                  </div>
+                  <div class="carousel-item">
+                    <div class="projeto">
+                        <div class="projeto-image" id="teste3" style="background-image: url('./assets/images/projetos/robotica_projetos_01.png');">
+                            <div class="slide-buttons">
+                                <div class="slide-button actived" onclick="changeImage(this,'teste3')" style="background-image: url('./assets/images/projetos/robotica_projetos_01.png');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste3')" style="background-image: url('./assets/images/projetos/robotica_projetos_02.png');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste3')" style="background-image: url('./assets/images/projetos/robotica_projetos_03.png');"></div>
+                                <div class="slide-button"  onclick="changeImage(this,'teste3')" style="background-image: url('./assets/images/projetos/robotica_projetos_04.png');"></div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>Aulas de robótica na escola.</p>
+                            <p>Após o treinamento é feito o suporte dos professors treinados.</p>
+                        </div>
+                    </div>                
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            </div>
+    </section>
+</body>
+<script src="./assets/scripts/script.js"></script> 
+<script src="./assets/scripts/robotica.js"></script> 
+</html>
