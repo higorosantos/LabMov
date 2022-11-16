@@ -1,0 +1,17 @@
+{
+  "name": "LabMov2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/higorosantos/LabMov.git",
+  "author": "Higor Oliveira dos Santos <higorosantos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.56.1"
+  }
+}
