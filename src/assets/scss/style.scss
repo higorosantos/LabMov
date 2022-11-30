@@ -5,6 +5,14 @@
 @import './variaveis';
 @import './header';
 
+/*
+    Z-INDEX
+        DARK-IMAGE: 2
+        OVERLAY: 3
+        BUTTONS: 4
+        SUBMENU: 5
+        MODAL: 10
+*/
 * {
     margin: 0;
     padding: 0;
@@ -19,12 +27,6 @@ body {
     background-color: #ffff;
     overflow-x: hidden;
 }
-
-.container {
-    max-width: 1280px;
-    margin: auto;
-}
-
 .banner {
 
     width: 100%;
@@ -53,6 +55,7 @@ body {
     width: 100%;
     bottom: 20px;
     left: 50%;
+    z-index: 2;
 
     transform: translate(-50%);
 }
@@ -109,6 +112,8 @@ body {
 
 .inner-shadow-image {
 
+    position: relative;
+
     &::before {
 
         content: '';
@@ -129,13 +134,11 @@ body {
 }
 
 .section-title{
-
-    h1,h2,h3,h4{
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        padding-left: 0.6rem;
-        letter-spacing: 0.4rem;
-    }
+    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 0.6rem;
+    letter-spacing: 0.4rem;
 
 }
 
@@ -167,15 +170,44 @@ body {
 
 .button {
 
-    padding: 1rem 2rem;
-    background-color: $title-blue;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    font-size: 8pt; 
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: $title-blue;
+    border: 2px solid #ccc; 
+
+    &:hover {
+
+        color: #ccc;
+
+    }
 
 }
+
+.float-button {
+
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15px;
+
+    &:hover {
+        border-color: #ccc;
+    }
+
+}
+
+
 
 
 .menu-toggle {
@@ -262,90 +294,56 @@ body {
     }
 }
 
-///CLASSES ÚNICAS
+.section-sobre--resume {
 
-.section-sobre{
-    display: flex;
-    flex-wrap: wrap;
-
-    //flex-direction: row;
-
-    .section-sobre--resume {
-        flex: 1;
-        font-size: 1.1rem;
-        font-weight: 300;
-        line-height: 1.9rem;
-        text-align: justify;
-        margin-right: 4rem;
-    }
-
-    .section-sobre--video {
-        max-width: 450px;
-        position: relative;
-        text-align: center;
-
-        img{
-            max-width: 100%;
-            height: auto;
-            box-shadow: 0px 5px 10px #333;
-            filter: brightness(80%);
-        }
-    
-    }
-
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
 }
-.section-pesquisas {
-    display: flex;
-    //flex-wrap: wrap;
-    justify-content: center;
-        
+
+.section-sobre--image {
+
+    position: relative;
+    text-align: center;
+
+
+    img{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0px 5px 10px #333;
+        filter: brightness(80%);
+    }
+
 }
 
 .section-pesquisas--areas {
-    width: 33%;
-    height: 350px;
-    position: relative;
-    border-radius: 6px;
+
     overflow: hidden;
-    margin: 0 1.2rem ;
+    position: relative;
+    height: 320px;
+    border-radius: 6px;
+
+    margin-bottom: 2rem;
 
     &:hover img{
+        
         transform: scale(1.1);
     }
 
     img {
+        
         object-fit: cover;
         border-radius: inherit;
         object-position: center;
         width: 100%;
         height: 100%;
         transition: all 0.3s linear;
+        filter: brightness(80%);
 
         
-    }
-
-    div {
-        z-index: 2;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-
-        .button {
-            display: inline-block;
-            background: transparent;
-            border: 2px solid #fff;
-            text-decoration: none;
-            color: #fff;
-            font-size: 0.9rem;
-            transition: all 0.3s linear;
-            &:hover {
-                color:#ccc;
-                border-color: #ccc;
-            }
-        }
-       
     }
 }
 
@@ -403,62 +401,35 @@ body {
     }
 }
 
+
+.filter-button {
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ffff;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid $title-blue;
+    word-break: break-all;
+    text-align: center;
+    color: $title-blue;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+
+    &:hover {
+        background-color: $title-blue;
+        color: #fff;
+    }
+
+}
+.filter-button.actived {
+    background-color: $title-blue;
+    color: #fff;
+}
+
 .section-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.section-projetos--filter {
-
-    border: 1px solid $font-color-secondary;
-    border-radius: 0.7rem;
-    background-color: $secondary-color;
-    display: inline-block;
-    padding: 0 1rem;
-    display: none;
-
-    ul,li {
-        list-style: none;
-       
-    }
-
-    
-    ul {
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    li {
-      
-        cursor: pointer;
-        display: inline-block;
-        text-transform: uppercase;
-        color: $font-color-secondary;
-        padding: 0.62rem 0.8rem;
-        border-bottom: 3px solid $secondary-color;
-
-
-        &:not(:last-child){
-            border-right: 1px solid $font-color-secondary;
-        }
-
-        &:hover {
-
-            color: #fff;
-            border-bottom: 3px solid $primary-color;
-        }
-    }
-
-    
-    .active {
-
-        color: #fff;
-        border-bottom: 3px solid $primary-color;
-    
-
-    }
 }
 
 .section-projetos-images {
@@ -499,9 +470,25 @@ body {
        
     }
 
- 
+}
 
+.instagram-image {
+    margin-bottom: 2rem;
+    max-height: 294px;
+    cursor: pointer;
 
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        filter: brightness(95%);
+        transform: all 1s;
+        
+        &:hover {
+            filter: brightness(60%);
+        }
+    }
 }
 
 .section-projeto-resume {
@@ -527,54 +514,8 @@ body {
     }
 }
 
-footer {
-    background-color: $primary-color;
-}
-
-.footer-content {
-    display: flex;
-    padding: 2rem 0;
-    justify-content: center;
-    color: #dddddd;
-    font-weight: 300;
-}
-
-.footer-logos {
-    display: flex;
-}
-.footer-image {
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    margin-right: 2rem;
-
-    img {
-        width: 100%;
-        height: 100%;
-        filter: brightness(100%);
-    }
-}
-
-.footer-address, .footer-contact, .footer-social {
-    margin-right: 5rem;
-
-    h2 {
-        font-size: 0.8rem;
-        font-weight: bold;
-        color: #dddd;
-        text-transform: uppercase;
-    }
-}
-
-footer .content{
-    margin-top: 1.2rem;
-}
-
 @media (max-width: 1100px) {
     
-    .section-sobre--video {
-        
-    }
 
     .area {
         width: 280px;
@@ -585,31 +526,6 @@ footer .content{
  
 @media (max-width: 999px) {
     
-    .section-pesquisas {
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       
-    }
-
-    .section-pesquisas--areas {
-
-        width: 80%;
-        height: 650px;
-        margin-bottom: 2rem;
-
-       
-      
-    }
-    .section-sobre {
-       flex-direction: column;
-       align-items: center;
-
-       .section-sobre--resume {
-        margin-right: 0px;
-       }
-    }
-
     .header-container {
         grid-template-areas:
             'logo toggle'
@@ -701,11 +617,6 @@ footer .content{
        
     }
 
-    .section-sobre--video {
-        margin-top: 2rem;
-       
-    }
-
     .area {
         width: 240px;
 
@@ -727,47 +638,13 @@ footer .content{
             font-size: 1.2rem
         }
     }
-    .section-sobre {
-        .section-sobre--resume{
-            font-size: 1rem;
-        }
-    }
-    .section-areas-pesquisas {
-        flex-direction: column;
+    
 
-        .area{
-            width: 320px;
-            margin-bottom: 2rem;
-
-            p {
-                font-size: 12pt;
-            }
-            h2 {
-                font-size: medium;
-            }
-        }
-    }
-
-    .section-pesquisas--areas {
-
-        width: 450px;
-        height: 450px;
-        margin-bottom: 2rem;
-
-       
-      
-    }
 
 }
 
 @media (max-width: 500px){
 
-    .section-pesquisas--areas {
-
-        width: 320px;
-        height: 320px;
-        margin-bottom: 2rem;
  
-    }
 
 }
