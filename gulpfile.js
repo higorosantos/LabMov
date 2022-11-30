@@ -5,10 +5,17 @@ const watch = require('gulp-watch');
 
 function SassToCss(){
 
-    return  gulp.src(['./src/assets/scss/*.scss','./node_modules/bootstrap/scss/*.scss'])
+    return  gulp.src(['./src/assets/scss/*.scss'])
         .pipe(sass({ outputStyle: 'compressed'}))
         .pipe(gulp.dest('./src/assets/css'))
 
+}
+
+function BootstrapCss(){
+
+    return gulp.src('./node_modules/bootstrap/scss/*.scss')
+           .pipe(sass({ outputStyle: 'compressed'}))
+           .pipe(gulp.dest('./src/assets/css'))
 }
 
 function Watcher(){
@@ -20,4 +27,4 @@ function Watcher(){
 }
 
 
-module.exports.default = parallel(SassToCss,Watcher);
+module.exports.default = parallel(SassToCss,BootstrapCss,Watcher);

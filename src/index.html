@@ -5,36 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/cf64a89bf1.js" crossorigin="anonymous"></script>
     <title>LabMov</title>
+    <style>
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+             text-align: center;
+        }
+        .rounded-circle {
+            border-radius: inherit;
+            object-fit: cover;
+            border: 2px solid #2364C7;
+        }
+
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="header-container container">
-            <div class="logo"><img src="./assets/images/logo.png" alt="logo"></div>
-            <div class="menu-toggle"></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="./quemsomos.html">quem somos</a></li>
-                    <li><a id="open-submenu" href="#">pesquisas</a>
-                        <div class="projetos-submenu">
-                            <ul>
-                                <li><a href="./impressao.html">impressão 3d</a></li>
-                                <li><a href="./impressao.html">simulação</a></li>
-                                <li><a href="./robotica.html">robotica</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">noticias</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScnbrODzKVrmP3G6KukY6EGzHsjoyWpELQ3nrpMHEar1cEWhw/viewform"
-                            target="_blank">Prestação de serviços</a></li>
-                </ul>
-            </nav>
-        </div>
+        
     </header>
     <section class="banner">
         <div class="slides">
@@ -71,124 +62,91 @@
             </div>
         </div>
     </section>
+    <section class="section-white section-default" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">quem somos</h2>
+            <div class="section-body">
+                
+            <div class="container marketing mt-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                      <img class="rounded-circle" src="./assets/images/professora_gisele.jpg" width="140" height="140" preserveAspectRatio="xMidYMid slice" alt="">
+                      <h5 class="fw-bold text-uppercase mt-4">Gisele Duarte Caboclo Antolin</h5>
+                      <p class="fw-light">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" style="object-fit: contain;" src="./assets/images/professor_mauricio.png" width="140" height="140" preserveAspectRatio="xMidYMid slice" alt="">
+              
+                      <h5 class="fw-bold text-uppercase mt-4">Mauricio Quelhas Antolin </h5>
+                      <p class="fw-light">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                      <img class="rounded-circle" src="./assets/images/professor_gian.jpg" width="140" height="140" preserveAspectRatio="xMidYMid slice" alt="">
+                      <h5 class="fw-bold text-uppercase mt-4">Giancarlo Cordeiro da Costa </h5>
+                      <p class="fw-light">And lastly this, the third column of representative placeholder content.</p>
+                    </div><!-- /.col-lg-4 -->
+                  </div>
+                <div class="row mt-5 justify-content-center">
+                     <a class="button col-2" href="./assets/pages/quemsomos.html">veja mais</a>
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
     <section class="section-blue section-default">
         <div class="container">
             <h2 class="section-title">pesquisas</h2>
             <div class="section-body row">
                 <div class="section-pesquisas--areas col-lg-4 col-md-12">
                     <img class="" src="./assets/images/simulacao_main.png" alt="Simulação">
-                    <div>
-                        <a class="button" href="./impressao.html">simulação</a>
-                    </div>
+                    <a class="button float-button" href="./impressao.html">simulação</a>
                 </div>
                 <div class="section-pesquisas--areas col-lg-4 col-md-12">
                     <img src="./assets/images/impressao_main.png" alt="Simulação">
-                    <div>
-                        <a class="button" href="./impressao.html">impressão 3d</a>
-                    </div>
+                    <a class="button float-button" href="./impressao.html">impressão 3d</a>    
                 </div>
-                <div class="section-pesquisas--areas col-lg-4 col-md-12 inner-shadow-image">
+                <div class="section-pesquisas--areas col-lg-4 col-md-12">
                     <img src="./assets/images/robotica_main.png"  alt="Simulação">
-                    <div>
-                        <a class="button" href="./impressao.html">robótica</a>
-                    </div>
+                    <a class="button float-button" href="./impressao.html">robótica</a>  
                 </div>
             </div>
         </div>
     </section>
     <section class="section-white section-default">
-        <div class="container">
-            <div class="section-title">
-                <h2>galeria</h2>
-            </div>
-            <div class="section-projetos section-body">
-                <div class="section-projetos--filter">
-                    <ul>
-                        <li class="active" id="filter-todos">todos</li>
-                        <li class="" id="filter-simulacao">simulação</li>
-                        <li class="" id="filter-impressao">impressão 3d</li>
-                        <li class="" id="filter-robotica">robótica</li>
-                    </ul>
-                </div>
-                <div class="section-projetos-images">
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao1.jpg"></div>
-                        </div>
-
+        <div class="container"> 
+            <h2 class="section-title">galeria</h2>
+            <div class="section-projetos section-body container">
+               <div class="row">
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/1.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/robo.png"></div>
-                        </div>
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/2.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao2.jpg"></div>
-                        </div>
-
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/3.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao3.jpg"></div>
-                        </div>
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/4.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao4.jpg"></div>
-                        </div>
-
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/5.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao5.jpg"></div>
-                        </div>
-
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/6.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao9.jpg"></div>
-                        </div>
-
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/7.jpg" alt="">
                     </div>
-                    <div class="section-projeto-image">
-                        <div class="section-projeto-image-area">
-                            <div class="section-projeto-resume">
-                                <h5>Titulo</h5>
-                                <p>Resumo</p>
-                            </div>
-                            <div class="dark-image"><img src="./assets/images/projetos/impressao8.jpg"></div>
-                        </div>
+                    <div class="col-lg-3 col-6 instagram-image">
+                        <img src="./assets/images/instagram/8.jpg" alt="" style="width: 100%">
                     </div>
-                </div>
+               </div>
+               <div class="row">
+                    <a class="button" href="https://www.instagram.com/labmov_uerj/" target="_blank">VEJA MAIS <i class="fa-brands fa-instagram fa-lg fa-bounce" style="margin-left: 0.5rem;"></i></a>
+               </div>
             </div>
     </section>
     </div>
@@ -196,5 +154,6 @@
 </body>
 <script src="./assets/scripts/script.js"></script>
 <script src="./assets/scripts/carroulsel.js"></script>
+<script src="./assets/scripts/header.js"></script>
 
 </html>
